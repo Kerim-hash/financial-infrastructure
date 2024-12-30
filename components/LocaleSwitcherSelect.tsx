@@ -19,13 +19,12 @@ type Props = {
 
 export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
   const router = useRouter();
-
   const pathname = usePathname();
   const params = useParams();
 
   function onSelectChange(nextLocale: string) {
     router.replace(
-      { pathname, params },
+      { pathname, query: { ...params } }, // Merge params into query
       { locale: nextLocale as Locale }
     );
   }
@@ -33,7 +32,7 @@ export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
       <SelectTrigger
-        className='w-[80px] text-white h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0'
+        className="w-[80px] text-white h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0"
         aria-label={label}
       >
         <SelectValue />
