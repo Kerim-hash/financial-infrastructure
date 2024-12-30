@@ -57,6 +57,15 @@ export function getContactFormSchema(t?: (key: string) => string) {
     message: z.string().min(10, {
       message: t ? t("min") : "Message must be at least 10 characters.",
     }),
+    legal: z.string().min(10, {
+      message: t ? t("min") : "Message must be at least 10 characters.",
+    }),
+    lastName: z.string().min(10, {
+      message: t ? t("min") : "Message must be at least 10 characters.",
+    }),
+    phone: z.string().min(10, {
+      message: t ? t("min") : "Message must be at least 10 characters.",
+    }),
   });
 }
 
