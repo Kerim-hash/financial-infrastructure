@@ -1,0 +1,83 @@
+{
+  "common": {
+    "contactUs": "Contact",
+    "office": {
+      "title": "Office",
+      "value": "Kyrgyz Republic, Bishkek, 178 Panfilov St., office #406"
+    },
+    "phone": "Phone",
+    "email": "Email",
+    "schedule": {
+      "title": "Mode of operation",
+      "value": "Mon-Fri, 9:00 a.m. - 6:00 p.m"
+    }
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Invest confidently",
+      "desc": "Effective support for business, entrepreneurship, trading, as well as trade and services in all key areas, including work with national projects, international cooperation and global support, will ensure the conditions for the development and achievement of users' goals."
+    },
+    "about": {
+      "title": "Invest wisely and confidently",
+      "desc": "Effective support for business, entrepreneurship, trading, trade and services in all key areas, including national projects, international cooperation and global support, will ensure that you can develop and achieve your goals ",
+      "list": [
+        "Preserve and increase capital",
+        "Build passive income",
+        "Prepare for significant life events"
+      ]
+    },
+    "ourPlatform": {
+      "title": "Our platform:",
+      "subtitle": "your solution for every challenge",
+      "desc": "CJSC 'Financial Infrastructure' is a key player in global trade, marketing, investment activities and realization of large business projects in Kyrgyzstan."
+    },
+    "missionAndGoal": {
+      "title": "Our goal and mission",
+      "desc": "Our mission is to promote the development of the Kyrgyz Republic, protect the state interests and support domestic brands, companies and associations. We aim to implement international investment, commercial and business projects with the active involvement of local communities, entrepreneurs and shareholders of the country. Together we strengthen Kyrgyzstan's national and state initiatives, while enhancing its image and prestige on the world stage"
+    },
+    "trust": {
+      "title": "Why are we trusted?",
+      "list": [
+          {
+            "title": "Experience",
+            "desc": "our joint-stock company was founded by a group of experienced entrepreneurs who are ready to share their knowledge with our shareholders"
+          },
+          {
+            "title": "Reliability",
+            "desc": "The principle of building the company is based on respect for all rights and laws, and it is this direction that guarantees a safe investment"
+          },
+          {
+            "title": "Benefit",
+            "desc": "We undertake only those projects and offer only those services in which we understand 100% and from which we guarantee benefits to the company's shareholders."
+          },
+          {
+            "title": "Development",
+            "desc": "The company's goals are built for the years ahead, we will follow them with the guarantee of multiplying profitability and position in the international arena"
+          }
+      ]
+    }
+  },
+  "ContactPage": {
+    "title": "Contact"
+  },
+  "navigation": {
+    "services": "Services",
+    "advantages": "Advantages",
+    "contact": "Contacts"
+  },
+  "contactForm": {
+    "title": "Raising the rating of the Kyrgyz Republic together!",
+    "legal": "Legal organization",
+    "name": "Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Ask your question",
+    "submit": "Submit"
+  },
+  "validation": {
+    "invalid": "Email invalid",
+    "required": "Name required",
+    "min": "Message required to be at least 10 characters"
+  }
+}
