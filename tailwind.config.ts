@@ -74,7 +74,7 @@ export default {
         sm: "0.875rem",
         base: "1rem",
         lg: "1.5rem",
-        xl: "1.25rem",
+        xl: "2rem",
         xl2: "3rem",
         title: ["4rem", { lineHeight: "1.2" }],
         desc1: "1.25rem",
@@ -125,9 +125,9 @@ export default {
           },
         },
         ".title": {
-          "@apply tracking-tight text-xl2 font-semibold": {}, // Base styles
+          "@apply tracking-tight text-xl font-semibold": {}, // Base styles
           "@screen sm": {
-			'@apply text-xl2 leading-tight': {}, // Adjusts for smaller screens
+			      '@apply text-xl2 leading-tight': {}, // Adjusts for smaller screens
           },
           "@screen md": {
             "@apply text-title tracking-tighter font-semibold": {}, // Styles for medium screens and above

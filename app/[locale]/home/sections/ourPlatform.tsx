@@ -10,7 +10,7 @@ const OurPlatform = async () => {
         {/* Заголовок */}
         <div className="flex items-center md:gap-4">
           <h2 className="text-primary title mb-2">{t("title")}</h2>
-          <span className="flex-grow border-t-4 border-primary"></span>
+          <span className="hidden md:block flex-grow border-t-4 border-primary"></span>
         </div>
 
         {/* Подзаголовок */}

@@ -6,7 +6,7 @@ const Hero = async () => {
     const tCommon = await getTranslations("common");
 
     return (
-        <div className="hero bg-foreground h-screen-minus-135 rounded-bl-lg rounded-br-lg">
+        <div className="hero bg-foreground h-screen-minus-135 rounded-bl-lg rounded-br-lg py-5 md:py-0">
             <div className="container flex flex-col h-full justify-center px-5 md:px-0">
                 <div className="max-w-4xl">
                     <h2 className="title text-white font-normal tracking-tightest">
