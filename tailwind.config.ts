@@ -119,7 +119,7 @@ export default {
           "@apply px-4 py-2 text-base": {},
         },
         ".btn-lg": {
-          "@apply px-4 py-4 text-xl": {},
+          "@apply px-2 py-2 text-desc2": {},
           "@screen md": {
             "@apply tracking-wide px-6 py-3.5 text-xl text-desc1": {}, // для экранов от md размер остаётся 4xl
           },
