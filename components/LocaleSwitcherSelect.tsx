@@ -39,7 +39,7 @@ export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
       </SelectTrigger>
       <SelectContent>
         {routing.locales.map((locale) => (
-          <SelectItem key={locale} value={locale}>
+          <SelectItem className="cursor-pointer" key={locale} value={locale}>
             {locale.toUpperCase()}
           </SelectItem>
         ))}

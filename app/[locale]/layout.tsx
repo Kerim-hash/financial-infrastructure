@@ -8,8 +8,14 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import { Open_Sans } from 'next/font/google';
+import { Suspense } from "react";
 
-const openSans = Open_Sans({ subsets: ['latin'], variable: '--font-open-sans' });
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  display: 'swap', 
+  variable: '--font-open-sans',
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -39,7 +45,9 @@ export default async function RootLayout({
         `}
       >
         <NextIntlClientProvider messages={messages}>
+        <Suspense fallback={<div>Loading...</div>}>
           <Navbar />
+        </Suspense>
           {children}
           <Footer />
         </NextIntlClientProvider>

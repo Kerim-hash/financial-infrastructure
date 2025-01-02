@@ -9,18 +9,18 @@ const About = async () => {
 
   return (
     <div className="bg-secondary-foreground rounded-lg">
-      <div className="flex container py-[80px]">
+      <div className="container flex flex-wrap px-4 md:px-0 py-20 md:py-[80px] gap-y-10">
         <div className="flex-1">
-          <h2 className="title">{t("title")}</h2>
+          <h2 className="title text-primary">{t("title")}</h2>
         </div>
         <div className="flex-1">
-          <p className="desc1 text-secondary">{t("desc")}</p>
-          <ul className="space-y-3 mt-10">
-            {Array.isArray(listItems) &&
-              listItems.map((item, index) => (
+          <p className="desc1 text-secondary mb-8">{t("desc")}</p>
+          {listItems.length > 0 && (
+            <ul className="space-y-6 mt-6">
+              {listItems.map((item, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  {/* Иконка */}
-                  <div>
+                  {/* Icon */}
+                  <div className="flex-shrink-0">
                     <svg
                       width="13"
                       height="21"
@@ -36,11 +36,12 @@ const About = async () => {
                       />
                     </svg>
                   </div>
-                  {/* Текст элемента списка */}
+                  {/* List item text */}
                   <span className="text-primary text-lg font-semibold">{item}</span>
                 </li>
               ))}
-          </ul>
+            </ul>
+          )}
         </div>
       </div>
     </div>

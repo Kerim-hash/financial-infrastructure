@@ -12,8 +12,8 @@ const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const [isClient, setIsClient] = useState(false);
-  const locale = useLocale();
-  console.log('locale',locale)
+  const locale = useLocale() as 'en' | 'ru';
+
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -29,9 +29,9 @@ const Header: FC = () => {
   }, [isClient, normalizedPath]);
 
   const navLinks = [
-    { key: 'contact', label: { en: 'Contact', fr: 'Contactez-moi', de: 'Kontakt', ru: 'Контакты' }, link: 'contact' },
-    { key: 'about', label: { en: 'About Us', fr: 'À Propos', de: 'Über Uns', ru: 'О нас' }, link: 'about' },
-    { key: 'services', label: { en: 'Services', fr: 'Services', de: 'Dienstleistungen', ru: 'Услуги' }, link: 'services' },
+    { key: 'main', label: { en: 'Main', ru: 'Главная' }, link: '' },
+    { key: 'about', label: { en: 'About Us',  ru: 'О компании' }, link: 'about' },
+    { key: 'contact', label: { en: 'Contact', ru: 'Контакты' }, link: 'contact' },
   ];
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const Header: FC = () => {
   }
 
   return (
-    <header className="py-4 border-b border-[#DDDDDF] bg-foreground">
+    <header className="py-6 bg-foreground">
       <div className="wrapper container flex justify-between items-center">
         {/* Логотип и кнопка-бургер */}
         <div className="flex items-center gap-8 justify-around md:justify-between lg:justify-normal w-full lg:w-auto">
@@ -74,20 +74,24 @@ const Header: FC = () => {
           >
             {/* Иконка для бургер-меню */}
             <div className="space-y-1">
-              <span className="block w-6 h-0.5 bg-primary"></span>
-              <span className="block w-6 h-0.5 bg-primary"></span>
-              <span className="block w-6 h-0.5 bg-primary"></span>
+              <span className="block w-6 h-0.5 bg-white"></span>
+              <span className="block w-6 h-0.5 bg-white"></span>
+              <span className="block w-6 h-0.5 bg-white"></span>
             </div>
           </button>
         </div>
 
         {/* Телефон (для больших экранов) */}
         <div className="flex gap-[24px]">
-          <a href="mailto:info@gmail.com" className="text-white text-xl font-lato hidden lg:block">
+
+          <p className="text-white text-base font-lato hidden lg:block">
+          Бишкек, Кыргызстан
+          </p>
+          <a href="mailto:info@gmail.com" className="text-white text-base font-lato hidden lg:block">
             info@gmail.com
           </a>
-          <a href="tel:+996556668989" className="text-white text-xl font-lato hidden lg:block">
-            +996 556 668 989
+          <a href="tel:+996556668989" className="text-white text-base font-lato hidden lg:block">
+            +996 (312) 155 122
           </a>
         </div>
       </div>
@@ -96,14 +100,14 @@ const Header: FC = () => {
       <div
         ref={menuRef}
         className={clsx(
-          'fixed top-0 right-0 h-screen w-3/4 max-w-xs bg-background shadow-lg z-50 transition-transform duration-300 lg:hidden',
+          'fixed top-0 right-0 h-screen w-3/4 max-w-xs bg-foreground shadow-lg z-50 transition-transform duration-300 lg:hidden',
           { 'translate-x-0': isMenuOpen, 'translate-x-full': !isMenuOpen }
         )}
       >
         <div className="flex flex-col h-full">
           {/* Кнопка закрытия */}
           <button
-            className="self-end p-4 text-primary"
+            className="self-end p-4 text-white"
             onClick={() => setIsMenuOpen(false)}
             aria-label="Close menu"
           >
@@ -121,11 +125,11 @@ const Header: FC = () => {
                   href={href}
                   className={clsx(
                     'text-white desc2 transition-colors duration-200',
-                    { '!text-primary': isActive, 'hover:text-primary': !isActive }
+                    { '!text-primary': isActive, 'hover:text-accent-foreground': !isActive }
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.label['en']}
+                  {item.label[locale]}
                 </Link>
               );
             })}
@@ -134,7 +138,7 @@ const Header: FC = () => {
 
           {/* Телефон и переключение языка */}
           <div className="mt-auto px-6 py-4 border-t">
-            <a href="tel:+996556668989" className="block text-primary text-lg font-lato mb-4">
+            <a href="tel:+996556668989" className="block text-white text-lg font-lato mb-4">
               +996 556 668 989
             </a>
           </div>
@@ -142,7 +146,7 @@ const Header: FC = () => {
       </div>
 
       {/* Навигация для больших экранов */}
-      <div className="wrapper container md:flex justify-between mt-2 items-center hidden lg:flex">
+      <div className="wrapper container md:flex justify-between mt-1 items-center hidden lg:flex">
         <nav className="flex gap-8">
           {navLinks.map((item) => {
             const href = `/${locale}/${item.link}`;
@@ -152,11 +156,11 @@ const Header: FC = () => {
                 key={item.key}
                 href={href}
                 className={clsx(
-                  'desc2 text-white transition-colors duration-200',
+                  'text-base text-white transition-colors duration-200',
                   { '!text-primary': isActive, 'hover:text-accent-foreground': !isActive }
                 )}
               >
-                {item.label['en']}
+                {item.label[locale]}
               </Link>
             );
           })}

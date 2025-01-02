@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
@@ -8,10 +5,7 @@ const FooterPage = () => {
   return (
     <footer className="py-8 bg-muted-foreground text-[#CCCCCC]">
       <div className="container mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+        <div
           className="flex flex-col lg:flex-row justify-between mb-8"
         >
           {/* Contact Info */}
@@ -20,30 +14,24 @@ const FooterPage = () => {
               Контактная информация
             </h2>
             <p className="mb-3">
-              <strong>Адрес:</strong>  {" "}
-               г.Бишкек, Токтогула 45
+              <strong>Адрес:</strong> г.Бишкек, Токтогула 45
             </p>
-            <p className="mb-3">
+            <div className="mb-3">
               <strong>Телефон:</strong>
               <a href="tel:+996550600006" className="hover:underline">
                 {" "}
                 +996 502 155 122
               </a>
-            </p>
+            </div>
 
-            <p className="mb-3 flex gap-4">
+            <div className="mb-3 flex gap-4">
               <strong>Email:</strong>
-              <ul>
-                <li>
-                  <a href="mailto:nurlan@aig.kg" className="hover:underline">
-                  d.asanovdesign@gmail.com  
-                  </a>
-                </li>
-              </ul>
-            </p>
+              <a href="mailto:nurlan@aig.kg" className="hover:underline">
+                d.asanovdesign@gmail.com
+              </a>
+           </div>
           </div>
 
-          {/* Navigation Links */}
           <div className="flex-1 mb-6 lg:mb-0 text-secondary">
             <h2 className="text-2xl font-semibold mb-4 text-primary">
               Навигация
@@ -102,7 +90,7 @@ const FooterPage = () => {
               </a>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );

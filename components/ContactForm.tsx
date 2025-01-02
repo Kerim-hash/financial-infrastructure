@@ -41,10 +41,11 @@ export function ContactForm() {
   return (
     <div className="bg-primary">
       <div className="rounded-tl-lg rounded-tr-lg bg-white pt-[80px] pb-[120px]">
-        <div className="container">
-          <h2 className="title text-primary mb-4">{t("title")}</h2>
-          <div className="flex justify-between mt-[130px] gap-[40px]">
-            <div className="flex-1">
+        <div className="container px-5 md:px-0">
+          <h2 className="title text-primary mb-4 text-center md:text-left">{t("title")}</h2>
+          <div className="flex flex-col md:flex-row justify-between mt-[130px] gap-[40px]">
+            {/* Image Section */}
+            <div className="flex-1 mb-8 md:mb-0">
               <Image
                 className="rounded-lg"
                 src="/contact.png"
@@ -53,6 +54,8 @@ export function ContactForm() {
                 alt="contact"
               />
             </div>
+
+            {/* Form Section */}
             <div className="flex-1">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -68,7 +71,7 @@ export function ContactForm() {
                       </FormItem>
                     )}
                   />
-                  <div className="flex gap-[20px]">
+                  <div className="flex gap-[20px] flex-col md:flex-row">
                     <div className="flex-1">
                       <FormField
                         control={form.control}
@@ -146,7 +149,7 @@ export function ContactForm() {
                       </FormItem>
                     )}
                   />
-                  <Button className="w-full" type="submit">
+                  <Button size={'lg'} className="w-full" type="submit">
                     {t("submit")}
                   </Button>
                 </form>

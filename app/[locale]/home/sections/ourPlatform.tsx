@@ -5,22 +5,22 @@ const OurPlatform = async () => {
   const t = await getTranslations("HomePage.ourPlatform");
 
   return (
-    <section className="py-[80px]">
-      <div className="container">
+    <section className="my-[60px] md:my-[80px]">
+      <div className="container px-5 md:px-0">
         {/* Заголовок */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center md:gap-4">
           <h2 className="text-primary title mb-2">{t("title")}</h2>
           <span className="flex-grow border-t-4 border-primary"></span>
         </div>
 
         {/* Подзаголовок */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center md:gap-4 md:mt-9">
           <span className="flex-grow border-t-4 border-primary"></span>
           <h3 className="text-primary title mb-4">{t("subtitle")}</h3>
         </div>
 
         {/* Описание */}
-        <p className="desc-2 text-secondary font-bold max-w-prose ml-auto mt-[80px]">
+        <p className="desc2 text-secondary font-bold max-w-[630px] ml-auto mt-[60px] md:mt-[80px]">
           {t("desc")}
         </p>
       </div>

@@ -6,6 +6,8 @@ body {
   font-family: var(--font-open-sans), sans-serif;
 }
 
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
