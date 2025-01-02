@@ -9,7 +9,7 @@ const About = async () => {
 
   return (
     <div className="bg-secondary-foreground rounded-lg">
-      <div className="container flex flex-wrap px-4 md:px-0 py-20 md:py-[80px] gap-y-10">
+      <div className="container flex flex-col px-4 md:px-0 py-20 md:py-[80px] gap-y-10">
         <div className="flex-1">
           <h2 className="title text-primary">{t("title")}</h2>
         </div>
