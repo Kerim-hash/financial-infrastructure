@@ -6,7 +6,7 @@ const MissionAndGoal = async () => {
   const t = await getTranslations("HomePage.missionAndGoal");
 
   return (
-    <div className="container relative">
+    <section className="container relative">
       <div className="flex flex-col rounded-lg">
         <div className="relative h-[758px]">
           <div className="flex">
@@ -32,7 +32,7 @@ const MissionAndGoal = async () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

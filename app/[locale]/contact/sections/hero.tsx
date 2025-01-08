@@ -7,7 +7,7 @@ const Hero = async () => {
   return <div className="hero bg-foreground h-screen-minus-135">
     <div className="container pt-[80px]">
             <h2 className="text-white title">{t("title")}</h2>
-            <button className="btn inline-block mt-12">{tCommon("contactUs")}</button>
+            <button className="btn btn-lg w-1/2 inline-block mt-12">{tCommon("contactUs")}</button>
     </div>
   </div>;
 };

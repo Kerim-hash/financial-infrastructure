@@ -3,10 +3,10 @@ import Hero from "./sections/hero";
 import About from "./sections/about";
 export default async function ContactPage() {
   return (
-    <div>
+    <main className="bg-[#F5F5F7]">
       <Hero />  
       <About />
       <ContactForm />
-    </div>
+    </main>
   );
 }

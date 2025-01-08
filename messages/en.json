@@ -55,10 +55,65 @@
           "desc": "The company's goals are built for the years ahead, we will follow them with the guarantee of multiplying profitability and position in the international arena"
         }
       ]
+    },
+    "goals": {
+      "title": "Setting New Goals and Achieving Them!",
+      "desc": "International trade knows no boundaries, and with the best professionals on your team, any project can be implemented with maximum benefits and prospects for long-term growth.",
+      "list": [
+        {
+          "title": "Submit a Request",
+          "desc": "Specify your proposal, cooperation interests, or consultation request."
+        },
+        {
+          "title": "Feedback",
+          "desc": "Your request will be forwarded to a relevant specialist."
+        },
+        {
+          "title": "Submit a Request",
+          "desc": "Specify your proposal, cooperation interests, or consultation request."
+        }
+      ]
     }
   },
   "ContactPage": {
     "title": "Contact"
+  },
+  "AboutPage": {
+    "hero": {
+      "title": "About Us",
+      "desc": "We are a team of professionals united by a common goal: to contribute to the development of Kyrgyzstan, support local companies and brands, and create opportunities for entry into international markets."
+    },
+    "about": "CJSC 'Financial Infrastructure' is a key player in the fields of global trade, marketing, investments, and implementation of large business projects in Kyrgyzstan. Our team comprises highly qualified specialists with international experience in trade, national project management, analytics, and business development.",
+    "mission": {
+      "title": "Our Mission",
+      "listTitle": "To contribute to the development of the Kyrgyz Republic through:",
+      "list": [
+        "Supporting local brands, companies, and associations.",
+        "Strengthening the country's economic potential.",
+        "Implementing international investment, commercial, and business initiatives."
+      ]
+    },
+    "structure": {
+        "title": "Structural Affiliation",
+        "list": [
+          {
+            "title": "Structure",
+            "desc": "The founder of CJSC 'Financial Infrastructure' is the Ministry of Economy and Commerce of the Kyrgyz Republic (with 100% state participation in the authorized capital)."
+          },
+          {
+            "title": "Goals",
+            "desc": "The company was created to monitor trade flows involving Kyrgyz companies whose goods do not enter the territory of the Kyrgyz Republic."
+          },
+          {
+            "title": "Tasks",
+            "desc": "Carrying out international trade, organizing and monitoring financial operations, managing international trade, addressing currency risks, and ensuring the financial stability of the Kyrgyz Republic. This highlights the importance of state support in the field of trade."
+          },
+          {
+            "title": "Privileges",
+            "desc": "CJSC 'Financial Infrastructure' has the right to conduct operations and settlements under contracts for goods and services that do not enter the territory of Kyrgyzstan. Activities are carried out with commercial banks without restrictions, ensuring flexibility and accessibility of financial operations."
+          }
+        ]
+      }
   },
   "navigation": {
     "services": "Services",

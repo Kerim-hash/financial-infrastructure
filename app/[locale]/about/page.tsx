@@ -1,9 +1,14 @@
-import Link from "next/link";
+import About from "./sections/about";
+import Hero from "./sections/hero";
+import Mission from "./sections/mission";
+import Structure from "./sections/structure";
 export default async function AboutPage() {
   return (
-    <div>
-      <h1>About us</h1>
-      <Link href='/'>Home</Link>
-    </div>
+    <main>
+      <Hero />
+      <About />
+      <Mission />
+      <Structure />
+    </main>
   );
 }

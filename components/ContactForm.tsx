@@ -19,7 +19,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
 
-export function ContactForm() {
+export function ContactForm({bg = 'transparent'}: {bg?:string}) {
   const t = useTranslations("contactForm");
   const validationMessages = useTranslations("validation");
 
@@ -39,7 +39,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="bg-primary">
+    <div className={`bg-${bg}`}>
       <div className="rounded-tl-lg rounded-tr-lg bg-white pt-[80px] pb-[120px]">
         <div className="container px-5 md:px-0">
           <h2 className="title text-primary mb-4 text-center md:text-left">{t("title")}</h2>
