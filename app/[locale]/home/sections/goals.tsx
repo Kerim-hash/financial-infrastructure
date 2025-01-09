@@ -20,7 +20,7 @@ const Goals = async () => {
 
       <p className="desc2 text-white  mb-[80px]">{t("desc")}</p>
 
-      <div className="flex justify-between gap-[24px] min-h-[440px]">
+      <div className="flex flex-col md:flex-row justify-between gap-[24px] min-h-[440px]">
         {listItems.map((item, index) => {
           return (
             <div key={index} className="group flex-1 border px-[24px] py-[40px] rounded-lg border-accent-foreground transition-colors hover:bg-accent-foreground">
