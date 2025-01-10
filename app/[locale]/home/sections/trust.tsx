@@ -68,12 +68,12 @@ const Trust: FC<TrustProps> = ({ translations }) => {
       </div>
 
       {/* List Items Section */}
-      <div className="flex flex-wrap justify-between mt-[110px] space-y-10 md:space-y-0">
+      <div className="flex flex-wrap justify-between mt-[110px] gap-y-10 xl:space-y-0">
         {Array.isArray(translations.list) &&
           translations.list.map((item, index) => (
             <motion.div
               key={index}
-              className="flex flex-col items-center text-center space-y-4 w-full sm:w-1/2 md:w-[23%]"
+              className="flex flex-col items-center text-center space-y-4 w-full sm:w-1/2 xl:w-[23%]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: visible ? 1 : 0, y: visible ? 0 : 20 }}
               transition={{

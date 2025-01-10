@@ -11,14 +11,14 @@ const MissionAndGoal = async () => {
         <div className="relative h-[758px]">
           <div className="flex">
             <Image
-              className="flex-1 rounded-tl-lg rounded-tr-lg md:rounded-tr-none object-cover"
+              className="flex-1 rounded-tl-lg rounded-tr-lg xl:rounded-tr-none object-cover"
               src="/missionAndGoal1.png"
               alt="Mission and Goal Image 1"
               width={640}
               height={758}
             />
             <Image
-              className="flex-1 rounded-tr-lg object-cover hidden md:block"
+              className="flex-1 rounded-tr-lg object-cover hidden xl:block"
               src="/missionAndGoal2.png"
               alt="Mission and Goal Image 2"
               width={640}

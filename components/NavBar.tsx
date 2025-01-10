@@ -60,8 +60,8 @@ const Header: FC = () => {
   }
 
   return (
-    <header className="py-6 bg-foreground">
-      <div className="wrapper container flex justify-between items-center">
+    <header className="py-6 bg-foreground px-0 md:px-5">
+      <div className="wrapper container flex justify-between items-center ">
         {/* Логотип и кнопка-бургер */}
         <div className="flex items-center gap-8 justify-around md:justify-between lg:justify-normal w-full lg:w-auto">
           <Link href="/">

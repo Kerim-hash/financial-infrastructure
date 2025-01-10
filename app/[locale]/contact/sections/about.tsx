@@ -6,12 +6,12 @@ const About = async () => {
   const tCommon = await getTranslations("common");
 
   return (
-    <section className="hero bg-secondary-foreground text-secondary rounded-lg">
+    <section className="bg-secondary-foreground text-secondary rounded-lg px-5">
       <div className="container py-[80px]">
         {/* Заголовок */}
         <h2 className="text-primary title mb-6">{t("title")}</h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           <div className="">
             <h3 className="text-lg font-semibold mb-3">{tCommon("office.title")}</h3>
             <p className="text-sm">{tCommon("office.value")}</p>
@@ -23,7 +23,7 @@ const About = async () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 mt-4">
+        <div className="grid md:grid-cols-2 gap-4 mt-4">
           <div className="">
             <h3 className="text-lg font-semibold mb-3">{tCommon("email")}</h3>
             <p className="text-sm">d.asanovdesign@gmail.com</p>
