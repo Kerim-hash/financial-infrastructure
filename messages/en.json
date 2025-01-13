@@ -76,7 +76,8 @@
     }
   },
   "ContactPage": {
-    "title": "Contact"
+    "title": "Contact",
+    "desc": "We are always happy to discuss your investment opportunities and answer any questions. Leave your contact details and we will contact you as soon as possible."
   },
   "AboutPage": {
     "hero": {

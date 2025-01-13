@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import React from "react";
 
 const Mission = async () => {
@@ -12,8 +13,9 @@ const Mission = async () => {
           <span className="hidden md:block flex-grow border-t-4 border-primary"></span>
         </div>
 
-        <div className="flex flex-row px-4 md:px-0 py-20 md:py-[80px] gap-y-10">
-        <div className="flex-1 hidden md:block">
+        <div className="flex flex-col flex-wrap md:flex-row px-4 md:px-0 py-5 md:py-[80px] gap-10">
+        <div className="flex-1">
+          <Image src="/about.png" alt="about" width={500} height={300} className="w-full rounded-lg object-fill  h-[300px] md:h-auto" />
         </div>
         <div className="flex-1">
           <p className="desc1 text-secondary mb-8">{t("listTitle")}</p>
