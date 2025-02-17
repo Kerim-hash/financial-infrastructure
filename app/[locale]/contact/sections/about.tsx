@@ -26,7 +26,7 @@ const About = async () => {
         <div className="grid md:grid-cols-2 gap-4 mt-4">
           <div className="">
             <h3 className="text-lg font-semibold mb-3">{tCommon("email")}</h3>
-            <p className="text-sm">d.asanovdesign@gmail.com</p>
+            <a href="mailto:contact@infinance.kg" className="text-sm hover:underline">contact@infinance.kg</a>
           </div>
 
           <div className="">

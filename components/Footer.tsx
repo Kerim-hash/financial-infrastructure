@@ -16,18 +16,17 @@ const FooterPage = () => {
             <p className="mb-3">
               <strong>Адрес:</strong> г.Бишкек, Токтогула 45
             </p>
-            <div className="mb-3">
+            <div className="mb-3 flex gap-1">
               <strong>Телефон:</strong>
-              <a href="tel:+996550600006" className="hover:underline">
-                {" "}
-                +996 502 155 122
+              <a href="tel:+996999990000" className="hover:underline">
+                +996 999 990 000
               </a>
             </div>
 
-            <div className="mb-3 flex gap-4">
+            <div className="mb-3 flex gap-1">
               <strong>Email:</strong>
-              <a href="mailto:nurlan@aig.kg" className="hover:underline">
-                d.asanovdesign@gmail.com
+              <a href="mailto:contact@infinance.kg" className="hover:underline">
+               contact@infinance.kg
               </a>
            </div>
           </div>

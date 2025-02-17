@@ -90,8 +90,8 @@ const Header: FC = () => {
           <a href="mailto:info@gmail.com" className="text-white text-base font-lato hidden lg:block">
             info@gmail.com
           </a>
-          <a href="tel:+996556668989" className="text-white text-base font-lato hidden lg:block">
-            +996 (312) 155 122
+          <a href="tel:+996999990000" className="text-white text-base font-lato hidden lg:block">
+          +996 999 990 000
           </a>
         </div>
       </div>
@@ -138,8 +138,8 @@ const Header: FC = () => {
 
           {/* Телефон и переключение языка */}
           <div className="mt-auto px-6 py-4 border-t">
-            <a href="tel:+996556668989" className="block text-white text-lg font-lato mb-4">
-              +996 556 668 989
+            <a href="tel:+996999990000" className="block text-white text-lg font-lato mb-4">
+            +996 999 990 000
             </a>
           </div>
         </div>
@@ -167,9 +167,9 @@ const Header: FC = () => {
         </nav>
         <div className="flex items-center gap-8">
         <LocaleSwitcher />
-          <Link href="/" className="btn">
-            Связаться
-          </Link>
+          <a href="tel:+996999990000" className="btn">
+          Связаться
+          </a>
         </div>
       </div>
     </header>

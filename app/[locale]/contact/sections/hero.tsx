@@ -9,9 +9,9 @@ const Hero = async () => {
       <div className="container pt-[80px]">
         <h2 className="text-white title">{t("title")}</h2>
         <p className="text-white desc1 mt-6">{t('desc')}</p>
-        <button className="btn btn-lg w-1/2 inline-block mt-12">
-          {tCommon("contactUs")}
-        </button>
+        <a href="tel:+996999990000"  className="btn btn-lg w-1/2 inline-block mt-12 text-center">
+        {tCommon("contactUs")}
+          </a>
       </div>
     </div>
   );
