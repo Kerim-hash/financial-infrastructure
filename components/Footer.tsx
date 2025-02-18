@@ -14,7 +14,7 @@ const FooterPage = () => {
               Контактная информация
             </h2>
             <p className="mb-3">
-              <strong>Адрес:</strong> г.Бишкек, Токтогула 45
+              <strong>Адрес:</strong> г.Бишкек, Боконбаева 113
             </p>
             <div className="mb-3 flex gap-1">
               <strong>Телефон:</strong>
