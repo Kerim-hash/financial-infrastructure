@@ -1,23 +1,40 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
+import { useLocale } from "next-intl";
 
 const FooterPage = () => {
+  const locale = useLocale() as "en" | "ru";
+
+  const navLinks = [
+    { key: "main", label: { en: "Main", ru: "Главная" }, link: "" },
+    {
+      key: "about",
+      label: { en: "About Us", ru: "О компании" },
+      link: "about",
+    },
+    {
+      key: "contact",
+      label: { en: "Contact", ru: "Контакты" },
+      link: "contact",
+    },
+  ];
+
   return (
     <footer className="py-8 bg-muted-foreground text-[#CCCCCC]">
       <div className="container mx-auto px-6">
-        <div
-          className="flex flex-col lg:flex-row justify-between mb-8"
-        >
+        <div className="flex flex-col lg:flex-row justify-between mb-8">
           {/* Contact Info */}
           <div className="flex-1 mb-6 lg:mb-0 text-secondary">
             <h2 className="text-2xl font-semibold mb-4 text-primary">
-              Контактная информация
+              {locale === "ru" ? "Контактная информация" : "Contact Information"}
             </h2>
             <p className="mb-3">
-              <strong>Адрес:</strong> г.Бишкек, Боконбаева 113
+              <strong>{locale === "ru" ? "Адрес:" : "Address:"}</strong> г.Бишкек, Боконбаева 113
             </p>
             <div className="mb-3 flex gap-1">
-              <strong>Телефон:</strong>
+              <strong>{locale === "ru" ? "Телефон:" : "Phone:"}</strong>
               <a href="tel:+996999990000" className="hover:underline">
                 +996 999 990 000
               </a>
@@ -26,38 +43,34 @@ const FooterPage = () => {
             <div className="mb-3 flex gap-1">
               <strong>Email:</strong>
               <a href="mailto:contact@infinance.kg" className="hover:underline">
-               contact@infinance.kg
+                contact@infinance.kg
               </a>
-           </div>
+            </div>
           </div>
 
+          {/* Navigation */}
           <div className="flex-1 mb-6 lg:mb-0 text-secondary">
             <h2 className="text-2xl font-semibold mb-4 text-primary">
-              Навигация
+              {locale === "ru" ? "Навигация" : "Navigation"}
             </h2>
             <ul id="navbar">
-              <li className="mb-3">
-                <Link href="/" className="hover:underline">
-                  Главная
-                </Link>
-              </li>
-              <li className="mb-3">
-                <Link href="/#advantage" className="hover:underline">
-                  Преимущества
-                </Link>
-              </li>
-              <li className="mb-3">
-                <Link href="/#contact" className="hover:underline">
-                  Контакты
-                </Link>
-              </li>
+              {navLinks.map((item) => (
+                <li className="mb-3" key={item.key}>
+                  <Link
+                    href={`/${locale}/${item.link}`}
+                    className="hover:underline"
+                  >
+                    {item.label[locale]}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Social Media Links */}
           <div className="flex-1">
             <h2 className="text-2xl font-semibold mb-4 text-primary">
-              Мы в соцсетях
+              {locale === "ru" ? "Мы в соцсетях" : "Follow Us"}
             </h2>
             <div className="flex space-x-4 justify-center md:justify-start">
               <a
