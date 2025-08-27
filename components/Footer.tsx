@@ -28,23 +28,31 @@ const FooterPage = () => {
           {/* Contact Info */}
           <div className="flex-1 mb-6 lg:mb-0 text-secondary">
             <h2 className="text-2xl font-semibold mb-4 text-primary">
-              {locale === "ru" ? "Контактная информация" : "Contact Information"}
+              {locale === "ru"
+                ? "Контактная информация"
+                : "Contact Information"}
             </h2>
-            <p className="mb-3">
-              <strong>{locale === "ru" ? "Адрес:" : "Address:"}</strong> г.Бишкек, Боконбаева 113
+            <p className="mb-3 flex gap-4">
+              <strong>{locale === "ru" ? "Адрес:" : "Address:"}</strong>{" "}
+              <span>г.Бишкек, Боконбаева 113</span>
             </p>
-            <div className="mb-3 flex gap-1">
-              <strong>{locale === "ru" ? "Телефон:" : "Phone:"}</strong>
-              <a href="tel:+996999990000" className="hover:underline">
-                +996 999 990 000
-              </a>
-            </div>
 
-            <div className="mb-3 flex gap-1">
+            <div className="mb-3 flex gap-4">
               <strong>Email:</strong>
-              <a href="mailto:contact@infinance.kg" className="hover:underline">
-                contact@infinance.kg
-              </a>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="mailto:contact@infinance.kg"
+                  className="hover:underline"
+                >
+                  contact@infinance.kg
+                </a>
+                <a
+                  href="mailto:llcinfinance@gmail.com"
+                  className="hover:underline"
+                >
+                  llcinfinance@gmail.com
+                </a>
+              </div>
             </div>
           </div>
 

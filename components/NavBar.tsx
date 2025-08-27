@@ -95,16 +95,10 @@ const Header: FC = () => {
             {locale === "ru" ? "Бишкек, Кыргызстан" : "Bishkek, Kyrgyzstan"}
           </p>
           <a
-            href="mailto:info@gmail.com"
+            href="mailto:contact@infinance.kg"
             className="text-white text-base font-lato hidden lg:block"
           >
-            info@gmail.com
-          </a>
-          <a
-            href="tel:+996999990000"
-            className="text-white text-base font-lato hidden lg:block"
-          >
-            +996 999 990 000
+            contact@infinance.kg
           </a>
         </div>
       </div>
@@ -151,16 +145,6 @@ const Header: FC = () => {
             })}
             <LocaleSwitcher />
           </nav>
-
-          {/* Телефон и переключение языка */}
-          <div className="mt-auto px-6 py-4 border-t">
-            <a
-              href="tel:+996999990000"
-              className="block text-white text-lg font-lato mb-4"
-            >
-              +996 999 990 000
-            </a>
-          </div>
         </div>
       </div>
 
