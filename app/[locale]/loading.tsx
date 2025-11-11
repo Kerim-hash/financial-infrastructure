@@ -10,7 +10,7 @@ const Loading = () => {
     <div className="fixed  inset-0 flex items-center justify-center z-50 bg-foreground">
       <div className="logo-pulse">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="Logo"
           width={96}
           height={96}

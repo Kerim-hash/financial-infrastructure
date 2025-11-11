@@ -73,7 +73,7 @@ const Header: FC = () => {
         {/* Логотип и кнопка-бургер */}
         <div className="flex items-center gap-8 justify-around md:justify-between lg:justify-normal w-full lg:w-auto">
           <Link href="/">
-            <Image src={"/Logo.svg"} width={215} height={56} alt="logo" />
+            <Image src={"/white_logo_horizontal.png"} width={215} height={56} alt="logo" />
           </Link>
           <button
             className="lg:hidden block p-2 text-primary"
