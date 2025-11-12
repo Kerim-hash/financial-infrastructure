@@ -1,18 +1,25 @@
 import { ReactNode } from "react";
-import { Open_Sans } from 'next/font/google';
+import localFont from "next/font/local";
 
-const openSans = Open_Sans({
-  subsets: ["latin"],
+const geistSans = localFont({
+  src: "../public/fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
   display: "swap",
-  variable: "--font-open-sans",
 });
+
+const geistMono = localFont({
+  src: "../public/fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  display: "swap",
+});
+
 type Props = {
   children: ReactNode;
 };
 
 export default function BaseLayout({ children }: Props) {
   return (
-    <html className="h-full" lang="ru">
+    <html lang="ru" className="h-full">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Финансовая инфраструктура</title>
@@ -42,8 +49,10 @@ export default function BaseLayout({ children }: Props) {
       <body
         suppressHydrationWarning
         className={`
-          ${openSans.variable} 
+          ${geistSans.variable} 
+          ${geistMono.variable} 
           antialiased
+          font-[geistMono]
         `}
       >
         {children}
