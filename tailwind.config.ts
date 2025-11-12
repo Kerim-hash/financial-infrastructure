@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        openSans: ['"Open Sans"', "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
       },
       container: {
         center: true,
@@ -93,6 +93,7 @@ export default {
     },
   },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function ({ addComponents }: any) {
       addComponents({
         ".btn": {
@@ -127,7 +128,7 @@ export default {
         ".title": {
           "@apply tracking-tight text-xl font-semibold": {}, // Base styles
           "@screen sm": {
-			      '@apply text-xl2 leading-tight': {}, // Adjusts for smaller screens
+            "@apply text-xl2 leading-tight": {}, // Adjusts for smaller screens
           },
           "@screen md": {
             "@apply text-title tracking-tighter font-semibold": {}, // Styles for medium screens and above

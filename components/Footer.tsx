@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import { useLocale } from "next-intl";
+import Image from "next/image";
 
 const FooterPage = () => {
   const locale = useLocale() as "en" | "ru";
@@ -88,7 +89,7 @@ const FooterPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="w-6 h-6" src="/linkedin.svg" alt="LinkedIn" />
+                <Image className="w-6 h-6" src="/linkedin.svg" alt="LinkedIn" />
               </a>
               <a
                 href="https://twitter.com"
@@ -97,7 +98,7 @@ const FooterPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="w-6 h-6" src="/twitter.svg" alt="Twitter" />
+                <Image className="w-6 h-6" src="/twitter.svg" alt="Twitter" />
               </a>
               <a
                 href="https://facebook.com"
@@ -106,7 +107,7 @@ const FooterPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img className="w-6 h-6" src="/facebook.svg" alt="Facebook" />
+                <Image className="w-6 h-6" src="/facebook.svg" alt="Facebook" />
               </a>
             </div>
           </div>
