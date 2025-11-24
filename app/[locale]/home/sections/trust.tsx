@@ -82,7 +82,7 @@ const Trust: FC<TrustProps> = ({ translations }) => {
               }}
             >
               <Image src={`/trust${index + 1}.png`} alt="trust" width={70} height={70} />
-              <h5 className="text-lg tracking-tightest text-primary font-semibold">{item.title}</h5>
+              <h5 className="text-lg  text-primary font-semibold">{item.title}</h5>
               <p className="desc1 text-secondary">{item.desc}</p>
             </motion.div>
           ))}

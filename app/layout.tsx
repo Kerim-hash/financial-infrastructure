@@ -1,17 +1,4 @@
 import { ReactNode } from "react";
-import localFont from "next/font/local";
-
-const geistSans = localFont({
-  src: "../public/fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  display: "swap",
-});
-
-const geistMono = localFont({
-  src: "../public/fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  display: "swap",
-});
 
 type Props = {
   children: ReactNode;
@@ -31,6 +18,12 @@ export default function BaseLayout({ children }: Props) {
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/contact.png" />
         <meta name="format-detection" content="telephone=no" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet"
+        />
         <link
           rel="icon"
           type="image/png"
@@ -49,10 +42,7 @@ export default function BaseLayout({ children }: Props) {
       <body
         suppressHydrationWarning
         className={`
-          ${geistSans.variable} 
-          ${geistMono.variable} 
-          antialiased
-          font-[geistMono]
+          font-['Open Sans'] 
         `}
       >
         {children}

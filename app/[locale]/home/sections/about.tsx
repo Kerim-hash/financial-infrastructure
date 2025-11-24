@@ -30,7 +30,7 @@ const About = async () => {
                     >
                       <path
                         d="M2 2C7.90769 8.27692 9.79487 10.2821 10 10.5L2 19"
-                        stroke="#0042BA"
+                        stroke="#1c2340"
                         strokeWidth="3"
                         strokeLinecap="round"
                       />

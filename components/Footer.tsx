@@ -39,6 +39,14 @@ const FooterPage = () => {
             </p>
 
             <div className="mb-3 flex gap-4">
+              <strong> {locale === "ru" ? "Телефон:" : "Phone:"}</strong>
+              <div className="flex flex-col gap-3">
+                <a href="tel:+79252158338" className="hover:underline">
+                  +7 925 215 8338
+                </a>
+              </div>
+            </div>
+            <div className="mb-3 flex gap-4">
               <strong>Email:</strong>
               <div className="flex flex-col gap-3">
                 <a
@@ -89,7 +97,13 @@ const FooterPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image className="w-6 h-6" width={24} height={24} src="/linkedin.svg" alt="LinkedIn" />
+                <Image
+                  className="w-6 h-6"
+                  width={24}
+                  height={24}
+                  src="/linkedin.svg"
+                  alt="LinkedIn"
+                />
               </a>
               <a
                 href="https://twitter.com"
@@ -98,7 +112,13 @@ const FooterPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image className="w-6 h-6" width={24} height={24} src="/twitter.svg" alt="Twitter" />
+                <Image
+                  className="w-6 h-6"
+                  width={24}
+                  height={24}
+                  src="/twitter.svg"
+                  alt="Twitter"
+                />
               </a>
               <a
                 href="https://facebook.com"
@@ -107,7 +127,13 @@ const FooterPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image className="w-6 h-6" width={24} height={24} src="/facebook.svg" alt="Facebook" />
+                <Image
+                  className="w-6 h-6"
+                  width={24}
+                  height={24}
+                  src="/facebook.svg"
+                  alt="Facebook"
+                />
               </a>
             </div>
           </div>
